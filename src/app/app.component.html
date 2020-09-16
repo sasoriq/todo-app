@@ -1,0 +1,4 @@
+<section class="todoapp">  
+  <app-todo-app (show)="jopa()" [todos]="todos" (remove)="onRemoveTodo($event)"></app-todo-app>
+  <app-todo-add (hideAdd)="hideAddComp()" [show]="isShow" (add)="onAddTodo($event)"></app-todo-add>    
+</section>

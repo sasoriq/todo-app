@@ -1,0 +1,39 @@
+
+<div class="wrapper">
+    <div class="content">
+        <div class="text">
+            <div class="header__row">
+                <div class="header__title">ANGULAR TO-DO</div>
+                <div class="header__subtitle">Welcome to the club, buddy!</div> 
+            </div>
+            <div class="container">
+                <div class="text__row">
+                    <div class="text__info">
+                        <div class="text__title">What do we have here?</div>
+                        <div class="text__subtitle" *ngIf="!todos.length">It’s a list of your’s unfinished things</div>
+                    </div>
+                    <div class="text__right">
+                        <div class="text__button"><button class="open-button" type="button" (click)="showComponent()">+</button></div>
+                        <div class="text__sub-button" *ngIf="!todos.length">Try this thing, I think it<br>will solve your problem</div>
+                    </div>
+                </div>
+                <div class="text__center">
+                    <div *ngIf="!todos.length">There is nothing here</div>
+                </div>
+                <div *ngIf="todos.length">
+                    <app-todo-list [todos]="todos" (remove)="onRemoveTodo($event)"></app-todo-list>  
+                </div>
+            </div>            
+        </div>
+        
+    </div>
+</div> 
+
+                    
+
+ 
+
+   
+
+
+

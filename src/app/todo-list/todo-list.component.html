@@ -1,0 +1,10 @@
+<section class="main">
+  <input class="search" type="text" placeholder="Search, if you can’t find something" #myInput [(ngModel)]='title' (input)="Search()">
+    <ul class="todo-list">
+      <li *ngFor="let todo of filterTodos">
+        <app-todo-list-item
+          [todo]="todo"          
+          (remove)="onRemoveTodo($event)"></app-todo-list-item>
+      </li>
+    </ul>    
+</section>

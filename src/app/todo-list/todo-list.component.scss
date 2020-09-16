@@ -1,0 +1,33 @@
+.search {
+        width: 476px;
+        height: 44px;
+        border: 0.5px solid #686868;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+
+ul {
+    max-height: 708px; 
+    overflow-y: auto;
+    word-break: break-all;
+    
+}
+
+li {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 33px; 
+    
+}
+
+li:after {
+    content: '';
+    display: block;
+    width: 204px;
+    border: 1px solid #EAEAEA;
+    margin: 33px auto 0;
+}

@@ -1,0 +1,17 @@
+<div *ngIf="show">  
+<header class="header">  
+  <input class="todo-input" placeholder="Type something here..." autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+  <button class="add-btn" [ngClass]="storedTheme" type="button" (click)="addTodo()">Add it!</button>
+  <button class="close" type="button" (click)="hideComponent()">x</button> 
+  
+  <div class="content">
+    <div class="theme-options">
+      <div id="theme-blue" (click)="setTheme('theme-blue')"></div>
+      <div id="theme-green" (click)="setTheme('theme-green')"></div>
+      <div id="theme-yellow" (click)="setTheme('theme-yellow')"></div>
+      <div id="theme-orange" (click)="setTheme('theme-orange')"></div>
+      <div id="theme-red" (click)="setTheme('theme-red')"></div>
+    </div>
+  </div>     
+</header>
+</div>
